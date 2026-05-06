@@ -1,0 +1,152 @@
+.task-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+	padding: 24px;
+  }
+
+  .task-box {
+	background: white;
+	border-radius: 16px;
+	padding: 18px;
+	box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+	transition: all 0.2s ease;
+  }
+  
+  .task-box:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  }
+
+
+  
+
+
+.relative {
+	position: relative;
+}
+.priority-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .priority-left {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+  }
+
+.priority-menu p {
+	text-transform: uppercase;
+}
+.priority-menu > div {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 9px;
+	gap: 5px;
+}
+.circle-box {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+  }
+  
+  .low { background: #4caf50; }
+  .medium { background: #ff9800; }
+  .high { background: #f44336; }
+
+
+
+  .task-box h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin-bottom: 6px;
+  }
+  .task-box p {
+	font-size: 13px;
+	color: #6b7280;
+	line-height: 1.4;
+  }
+
+.task-tags {
+	display: flex;
+	gap: 8px;
+	margin-top: 10px;
+  }
+  
+  .tag {
+	padding: 6px 10px;
+	border-radius: 8px;
+	font-size: 11px;
+	font-weight: 500;
+  }
+  
+  .tag-category {
+	background: #e3f2fd;
+	color: #1976d2;
+  }
+  
+  .tag-status {
+	background: #f1f1f1;
+	color: #555;
+  }
+
+  .score-badge {
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 999px;
+  }
+  
+
+  .score-badge.low {
+	background: #e8f5e9;
+	color: #2e7d32;
+  }
+  
+  .score-badge.medium {
+	background: #fff3e0;
+	color: #ef6c00;
+  }
+  
+  .score-badge.high {
+	background: #ffebee;
+	color: #c62828;
+  }
+
+.task-btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 8px;
+	color: #767575;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+.task-btn {
+	background: #eeecec;
+	border-radius: 8px;
+	padding: 6px 8px;
+	cursor: pointer;
+}
+
+.task-btns > div {
+	display: flex;
+	gap: 5px;
+}
+
+.task-btn-red {
+	background: #cf3636;
+	color: white;
+	cursor: default;
+}
+.task-btn-green {
+	background: #63c05b;
+	color: white;
+	cursor: default;
+}
