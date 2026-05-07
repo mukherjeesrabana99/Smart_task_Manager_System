@@ -28,6 +28,9 @@ A modern full-stack task management application with **LLM-powered task analysis
 
 * LLM Provider : Anthropic (primary)
 
+The app is live at:
+https://smart-task-manager-system-frontend.onrender.com/
+
 
 ### UX Enhancements
 
