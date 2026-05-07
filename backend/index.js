@@ -3,6 +3,8 @@ const cors= require("cors")
 const { connectDatabase } = require("./config/database")
 const taskRoutes= require("./routes/task.route.js")
 
+require('dotenv').config()
+
 const dns= require("node:dns/promises") ;   
 dns.setServers(["1.1.1.1", "1.0.0.1"]);   
 
@@ -13,7 +15,7 @@ app.use(express.json())
 app.use("/api/tasks", taskRoutes);
 
 connectDatabase().then((res)=>{
-    app.listen(5000, ()=>console.log("server running on 5000"))
+    app.listen(process.env.PORT, ()=>console.log(`server running on ${process.env.PORT}`))
 }).catch((e)=>console.log("Database not connected", e))
 
 
